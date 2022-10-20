@@ -1,181 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-body{
-    background-color: #0e1621;
-    font-family: 'Blinker', sans-serif;
-    color: #647D89;
-}
-.typed-text {
-    font-size: 50px;
-    line-height: 60px;
-    color: #FFFFFF;
-    font-weight: 700;
-    font-family: play, sans-serif;
-}
-.pa-portfolio-thumb {
-    display: flex;
-    position: relative;
-    -webkit-box-align: center;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.text-center{
-    text-align: center !important;
-}
-.m-0 {
-    margin: 0!important;
-}
-@media all and (max-width: 575px) { /* xs */
+    body {
+        background-color: #0e1621;
+        font-family: 'Blinker', sans-serif;
+        color: #647D89;
+    }
 
-/* Override Bootstrap - increase column margine on mobile */
-.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, 
-.col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, 
-.col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, 
-.col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, 
-.col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
-.col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, 
-.col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, 
-.col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, 
-.col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, 
-.col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-.portfolio_item{
-		margin-bottom: 200px !important;
-		}
-.portfolio_item_first{
-    margin-top: 200px !important;
-}
-.portfolio_tittle {
-    font-size: 25px;
-    margin-top: 25px;
-    font-weight: 200 !important;
-}
-.pa-hero-typed-text {
-		text-align: center !important; 
-		margin-left: 0px !important; 
-	}
-section.pa-centered-section {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	width: 100%;
-}
-.pa-full-height {
-	height: 100vh;
-}
-.pa-image-back {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-.pushable-content {
-		background: #17212E; /* Or the actual color of your background/applied image */
-		-webkit-font-smoothing: subpixel-antialiased;
-}
+    .typed-text {
+        font-size: 50px;
+        line-height: 60px;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-family: play, sans-serif;
+    }
+
+    .pa-portfolio-thumb {
+        display: flex;
+        position: relative;
+        -webkit-box-align: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+    .m-0 {
+        margin: 0 !important;
+    }
+
+    @media all and (max-width: 575px) {
+        /* xs */
+
+        /* Override Bootstrap - increase column margine on mobile */
+        .col,
+        .col-1,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-auto,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-auto,
+        .col-md,
+        .col-md-1,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-auto,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-auto,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-auto {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .portfolio_item {
+            margin-bottom: 200px !important;
+        }
+
+        .portfolio_item_first {
+            margin-top: 200px !important;
+        }
+
+        .portfolio_tittle {
+            font-size: 25px;
+            margin-top: 25px;
+            font-weight: 200 !important;
+        }
+
+        .pa-hero-typed-text {
+            text-align: center !important;
+            margin-left: 0px !important;
+        }
+
+        section.pa-centered-section {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .pa-full-height {
+            height: 100vh;
+        }
+
+        .pa-image-back {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pushable-content {
+            background: #17212E;
+            /* Or the actual color of your background/applied image */
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
 </style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="particles-js" class="pa-pattern-overlay" style="opacity: 37%;position:fixed; z-index:1;"></div>
     <section id="top" class="pa-hero pa-centered-section pa-full-height pa-image-back pushable-content section_main">
-		<div class="pa-video-container pa-absolute-fill pa-image-back" style="z-index:0;">			
-			<div class="pa-absolute-fill pa-gradient-back-v1" style="opacity: 0;"></div>
-			<video class="pa-video" preload="none" poster="assets/video/particle-video-light.jpg" autoplay="" loop="" muted="" playsinline="">
-				<source src="assets/video/coding.mp4" type="video/mp4">Your browser does not support HTML5 video.
-			</video>
-		</div>
+        <div class="pa-video-container pa-absolute-fill pa-image-back" style="z-index:0;">
+            <div class="pa-absolute-fill pa-gradient-back-v1" style="opacity: 0;"></div>
+            <video class="pa-video" preload="none" poster="assets/video/particle-video-light.jpg" autoplay="" loop=""
+                muted="" playsinline="">
+                <source src="assets/video/coding.mp4" type="video/mp4">Your browser does not support HTML5 video.
+            </video>
+        </div>
 
-		<div class="container pa-hero-content text-center">
-			<div class="row pa-hero-logo">
-				<div class="col-12">
-					<div></div>
-				</div>
-			</div>
-			<br>
-			<br>
-			<div class="row pa-hero-typed-text" style="color: #f78226">
-				<div class="col-12">
-					<div class="typed-text">
-						<span class="animated-text-effect" style="color: #f78226 !important;">We Analyze.</span><span class="typed-cursor">|</span>
-					</div>
-					<div class="additional-text pa-h4-v1 pa-bright">
-						<span class="">
-							Potenciamos tu negocio mediante soluciones de software a medida. 
-							<br>
-							<br>
-						</span>
-					</div>
-				</div>
-				<div class="col-12 mouse_container">
-					<div class="mouse_scroll" style="text-align: right;">
-							<div class="mouse">
-								<div class="wheel"></div>
-							</div>
-							<div>
-								<span class="m_scroll_arrows unu"></span>
-								<span class="m_scroll_arrows doi"></span>
-								<span class="m_scroll_arrows trei"></span>
-							</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="container pa-hero-content text-center">
+            <div class="row pa-hero-logo">
+                <div class="col-12">
+                    <div></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row pa-hero-typed-text" style="color: #f78226">
+                <div class="col-12">
+                    <div class="typed-text">
+                        <span class="animated-text-effect" style="color: #f78226 !important;">We Analyze.</span><span
+                            class="typed-cursor">|</span>
+                    </div>
+                    <div class="additional-text pa-h4-v1 pa-bright">
+                        <span class="">
+                            Potenciamos tu negocio mediante soluciones de software a medida.
+                            <br>
+                            <br>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 mouse_container">
+                    <div class="mouse_scroll" style="text-align: right;">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                        <div>
+                            <span class="m_scroll_arrows unu"></span>
+                            <span class="m_scroll_arrows doi"></span>
+                            <span class="m_scroll_arrows trei"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	</section>
+    </section>
     <div class="row pa-row-max2560" style="justify-content: center; display: flex;">
-        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 portfolio_item_first wow fadeIn" data-toggle="modal" data-target="#multicotizador" data-wow-duration="1.0s" data-wow-delay="0.0s" style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
-            <div class="pa-portfolio-thumb m-0 text-center" >
-                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="" > 
-                <source src="https://earsfactory.com/assets/video/multicotizador.mp4" type="video/mp4">Your browser does not support HTML5 video.
+        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 portfolio_item_first wow fadeIn"
+            data-toggle="modal" data-target="#multicotizador" data-wow-duration="1.0s" data-wow-delay="0.0s"
+            style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
+            <div class="pa-portfolio-thumb m-0 text-center">
+                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="">
+                    <source src="https://earsfactory.com/assets/video/multicotizador.mp4" type="video/mp4">Your browser
+                    does not support HTML5 video.
                 </video>
             </div>
-            <h1 class="portfolio_tittle text-center" style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center !important;"><strong>Multicotizador de Seguros</strong></h1>
+            <h1 class="portfolio_tittle text-center"
+                style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center !important;">
+                <strong>Multicotizador de Seguros</strong></h1>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal" data-target="#rrhh" style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;" data-wow-duration="1.0s" data-wow-delay="0.0s">
-            <div class="pa-portfolio-thumb m-0 text-center" >
-                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline=""> 
-                <source src="https://earsfactory.com/assets/video/rrhh.mp4" type="video/mp4">Your browser does not support HTML5 video.
+        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal"
+            data-target="#rrhh"
+            style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;"
+            data-wow-duration="1.0s" data-wow-delay="0.0s">
+            <div class="pa-portfolio-thumb m-0 text-center">
+                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="">
+                    <source src="https://earsfactory.com/assets/video/rrhh.mp4" type="video/mp4">Your browser does not
+                    support HTML5 video.
                 </video>
             </div>
-            <h1 class="portfolio_tittle text-center" style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;"><strong>Gestión de RRHH</strong></h1>
+            <h1 class="portfolio_tittle text-center"
+                style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;">
+                <strong>Gestión de RRHH</strong></h1>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal" data-target="#gestiondoc" data-wow-duration="1.0s" data-wow-delay="0.0s" style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
-            <div class="pa-portfolio-thumb m-0 text-center" >
-                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="" > 
-                <source src="https://earsfactory.com/assets/video/gestiondoc.mp4" type="video/mp4">Your browser does not support HTML5 video.
+        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal"
+            data-target="#gestiondoc" data-wow-duration="1.0s" data-wow-delay="0.0s"
+            style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
+            <div class="pa-portfolio-thumb m-0 text-center">
+                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="">
+                    <source src="https://earsfactory.com/assets/video/gestiondoc.mp4" type="video/mp4">Your browser does
+                    not support HTML5 video.
                 </video>
             </div>
-            <h1 class="portfolio_tittle text-center" style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;"><strong>Gestión de Cobranzas</strong></h1>
+            <h1 class="portfolio_tittle text-center"
+                style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;">
+                <strong>Gestión de Cobranzas</strong></h1>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal" data-target="#ilmercato" data-wow-duration="1.0s" data-wow-delay="0.0s" style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
-            <div class="pa-portfolio-thumb m-0 text-center" style="background-image: url(assets/images/GestionDoc.png);">
-                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="" > 
-                <source src="https://earsfactory.com/assets/video/ilmercato.mp4" type="video/mp4">Your browser does not support HTML5 video.
+        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item fadeInDelay00Duration10 wow fadeIn" data-toggle="modal"
+            data-target="#ilmercato" data-wow-duration="1.0s" data-wow-delay="0.0s"
+            style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
+            <div class="pa-portfolio-thumb m-0 text-center"
+                style="background-image: url(assets/images/GestionDoc.png);">
+                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="">
+                    <source src="https://earsfactory.com/assets/video/ilmercato.mp4" type="video/mp4">Your browser does
+                    not support HTML5 video.
                 </video>
             </div>
-            <h1 class="portfolio_tittle text-center" style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;"><strong>E-Commerce Solution</strong></h1>
+            <h1 class="portfolio_tittle text-center"
+                style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;">
+                <strong>E-Commerce Solution</strong></h1>
         </div>
-        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item portfolio_item_last fadeInDelay00Duration10 wow fadeIn" data-toggle="modal" data-target="#analisismuestras" data-wow-duration="1.0s" data-wow-delay="0.0s" style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
-            <div class="pa-portfolio-thumb m-0 text-center" style="background-image: url(assets/images/GestionDoc.png);">
-                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="" > 
-                <source src="https://earsfactory.com/assets/video/analisismuestras.mp4" type="video/mp4">Your browser does not support HTML5 video.
+        <div class="col-12 col-sm-6 col-lg-2 p-0 portfolio_item portfolio_item_last fadeInDelay00Duration10 wow fadeIn"
+            data-toggle="modal" data-target="#analisismuestras" data-wow-duration="1.0s" data-wow-delay="0.0s"
+            style="visibility: visible; animation-name: fadeIn; animation-duration: 1s; animation-delay: 0s;">
+            <div class="pa-portfolio-thumb m-0 text-center"
+                style="background-image: url(assets/images/GestionDoc.png);">
+                <video class="portfolio_video" preload="none" autoplay="" loop="" muted="" playsinline="">
+                    <source src="https://earsfactory.com/assets/video/analisismuestras.mp4" type="video/mp4">Your
+                    browser does not support HTML5 video.
                 </video>
             </div>
-            <h1 class="portfolio_tittle text-center" style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;"><strong>Análisis de Muestras</strong></h1>
+            <h1 class="portfolio_tittle text-center"
+                style="position:relative;z-index:99; background-color:white; font-size: 25px; text-align: center!important;">
+                <strong>Análisis de Muestras</strong></h1>
         </div>
     </div>
 </body>
+
 </html>
